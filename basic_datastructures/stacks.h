@@ -85,7 +85,7 @@ void display_stack(int stack[], int top)
 		printf("Elements in the stack-\n");
 		for(int i=top; i>=0; i--)
 		{
-			printf("%d\n", stack[i]);
+			printf("%d) %d\n", i+1, stack[i]);
 		}
 	}
 	else printf("No elements to display\n");

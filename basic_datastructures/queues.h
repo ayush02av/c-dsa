@@ -87,7 +87,7 @@ void display_queue(int queue[], int top)
 		printf("Elements in the queue-\n");
 		for(int i=top; i>=0; i--)
 		{
-			printf("%d\n", queue[i]);
+			printf("%d) %d\n", i+1, queue[i]);
 		}
 	}
 	else printf("No elements to display\n");

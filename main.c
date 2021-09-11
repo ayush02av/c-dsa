@@ -1,12 +1,14 @@
 #include "basic_datastructures/stacks.h"
 #include "basic_datastructures/queues.h"
+#include "basic_datastructures/arrays.h"
+#include "basic_datastructures/linkedlists.h"
 
 int main()
 {
 	int menu_choice, continueMenu = 1;
 
-	int menu_choices_indices[] = {1, 2};
-	char menu_choices[][20] = {"Stack", "Queue"};
+	int menu_choices_indices[] = {1, 2, 3, 4};
+	char menu_choices[][20] = {"Array", "Stack", "Queue", "Linked Lists"};
 
 	int number_of_choices = sizeof(menu_choices_indices) / sizeof(int);
 
@@ -29,10 +31,16 @@ int main()
 				printf("Exiting...");
 				break;
 			case 1:
-				stacks();
+				arrays();
 				break;
 			case 2:
+				stacks();
+				break;
+			case 3:
 				queues();
+				break;
+			case 4:
+				linkedlists();
 				break;
 		}
 
